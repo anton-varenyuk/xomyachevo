@@ -2,6 +2,15 @@
 
 module.exports = function(environment) {
   let ENV = {
+    firebase: {
+      apiKey: "AIzaSyCDI6y4pMmDnmHJrs3USrR3BBDXCaI7V9g",
+      authDomain: "homyachevo.firebaseapp.com",
+      databaseURL: "https://homyachevo.firebaseio.com",
+      projectId: "homyachevo",
+      storageBucket: "homyachevo.appspot.com",
+      messagingSenderId: "807182489656",
+      appId: "1:807182489656:web:b8da8cbfb3e016ba1a2ecd"
+    },
     modulePrefix: 'xomyachevo',
     environment,
     rootURL: '/',
