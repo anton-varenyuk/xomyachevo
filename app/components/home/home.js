@@ -15,8 +15,8 @@ export default class HomeComponent extends Component {
       this.y = data.val().y;
     });
 
-    this.keyboard.keyVal.subscribe(observer => {
-        switch (observer) {
+    this.keyboard.keyVal.subscribe(pressedKey => {
+        switch (pressedKey) {
           case 'ArrowDown':
             this.y--;
             this.database.updateVal(this.ref, {x: this.x, y: this.y});
@@ -34,7 +34,8 @@ export default class HomeComponent extends Component {
             this.database.updateVal(this.ref, {x: this.x, y: this.y});
             break;
         }
-        console.log(observer);
+
+        console.log(pressedKey);
         console.log('X:',this.x, 'Y: ', this.y);
     });
 
